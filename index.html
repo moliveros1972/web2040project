@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+	<style type="text/css">
+
+.navbar{
+	background:#F97300;
+}
+.nav-link , .navbar-brand{
+	color: #f4f4f4;
+	cursor: pointer;
+}
+.nav-link{
+	margin-right: 1em !important;
+}
+.nav-link:hover{
+	background: #f4f4f4;
+	color: #f97300;
+
+
+}
+.navbar-collapse{
+ justify-content: flex-end;
+}
+
+.navbar-toggler{
+  background:#fff !important;
+}
+
+.albumList{
+ margin: 4em 0;
+ position: relative; 
+}
+.albumList h1{
+ color:#F97300;
+ margin: 2em; 
+}
+.albumList .card{
+ box-shadow: 0 0 20px #ccc;
+}
+.albumList .card img{
+ width: 100%;
+ height: 12em;
+}
+.albumList .card-title{
+ color:#F97300;
+  
+}
+.albumLists .card-body{
+ padding: 1em;
+}
+
+.title{
+	font-size: 14;
+	color: blue;
+	float: right;
+}
+
+	</style>
+</head>
+<body>
+
+<script type="text/javascript">
+	
+var nav = document.createElement("nav");
+nav.setAttribute("class", "navbar navbar-expand-lg fixed-top ");
+
+var div1 = document.createElement("div");
+div1.setAttribute("class", "collapse navbar-collapse ");
+div1.setAttribute("id", "navbarSupportedContent");
+
+var title = document.createElement("h1");
+title.setAttribute("class", "title");
+title.innerHTML = "MOLIVEROS STUDIOS";
+
+var ul = document.createElement("ul");
+ul.setAttribute("class", "navbar-nav mr-4");
+
+var li1 = document.createElement("li");
+li1.setAttribute("class", "nav-item");
+
+var li2 = document.createElement("li");
+li2.setAttribute("class", "nav-item");;
+
+var li3 = document.createElement("li");
+li3.setAttribute("class", "nav-item");;
+
+var li4 = document.createElement("li");
+li4.setAttribute("class", "nav-item");;
+
+var anchor1 = document.createElement("a");
+anchor1.setAttribute("class", "nav-link");
+anchor1.setAttribute("data-value", "about");
+anchor1.setAttribute("href", "about.html");
+anchor1.innerHTML = "ABOUT";
+
+var anchor2 = document.createElement("a");
+anchor2.setAttribute("class", "nav-link");
+anchor2.setAttribute("data-value", "videos");
+anchor2.setAttribute("href", "videos.html");
+anchor2.innerHTML = "VIDEOS";
+
+var anchor3 = document.createElement("a");
+anchor3.setAttribute("class", "nav-link");
+anchor3.setAttribute("data-value", "classic");
+anchor3.setAttribute("href", "#classic");
+anchor3.innerHTML = "CLASSIC ROCK";
+
+var anchor4 = document.createElement("a");
+anchor4.setAttribute("class", "nav-link");
+anchor4.setAttribute("data-value", "home");
+anchor4.setAttribute("href", "#jazz");
+anchor4.innerHTML = "JAZZ";
+
+
+nav.appendChild(div1);
+div1.appendChild(title);
+div1.appendChild(ul);
+ul.appendChild(li1);
+ul.appendChild(li2);
+ul.appendChild(li3);
+ul.appendChild(li4);
+
+li1.appendChild(anchor1);
+li2.appendChild(anchor2);
+li3.appendChild(anchor3);
+li4.appendChild(anchor4);
+
+document.body.appendChild(nav);	
+
+var albums = document.createElement("h1");
+albums.innerHTML = "Welcome to our Album Library";
+document.body.appendChild(albums);
+
+var para1 = document.createElement("p");
+para1.innerHTML = "Follow the Best albums, by our favorite artist of all time.";
+document.body.appendChild(para1);
+
+
+</script>
+
+<div class="albumList">
+ <div class="container">
+ <h1 class="text-center" id="classic">Classic Rock</h1>
+  <div class="row">
+   <div class="col-md-4 col-lg-4 col-sm-12">
+    <div class="card">
+     <div class="card-img">
+      <img src="album1.png" class="img-fluid">
+     </div>
+     <div class="card-body">
+     <h4 class="card-title">Pink Floyd</h4>
+      <p class="card-text">
+       Dark Side Of The Moon
+      </p>
+     </div>
+     <div class="card-footer">
+      <a href="pink.html" class="card-link">List of Songs</a>
+     </div>
+    </div>
+   </div>
+   <div class="col-md-4 col-lg-4 col-sm-12">
+    <div class="card">
+     <div class="card-img">
+      <img src="album2.jpeg" class="img-fluid">
+     </div>
+     <div class="card-body">
+        <h4 class="card-title">The Doors</h4>
+      <p class="card-text">
+       The Doors
+      </p>
+     </div>
+     <div class="card-footer">
+      <a href="doors.html" class="card-link">List of Songs</a>
+     </div>
+    </div>
+   </div>
+   <div class="col-md-4 col-lg-4 col-sm-12">
+    <div class="card">
+     <div class="card-img">
+      <img src="album3.jpg" class="img-fluid">
+     </div>
+     <div class="card-body">
+     <h4 class="card-title">Sex Pistols</h4>
+      <p class="card-text">
+       Never Mind the Bollocks
+      </p>
+     </div>
+     <div class="card-footer">
+      <a href="pistols.html" class="card-link">List of Songs</a>
+     </div>
+    </div>
+   </div>
+  </div>
+ </div>
+</div>
+
+<div class="albumList">
+ <div class="container">
+ <h1 class="text-center" id="jazz">Jazz</h1>
+  <div class="row">
+   <div class="col-md-4 col-lg-4 col-sm-12">
+    <div class="card">
+     <div class="card-img">
+      <img src="album5.jpeg" class="img-fluid">
+     </div>
+     <div class="card-body">
+     <h4 class="card-title">Charlie Parker</h4>
+      <p class="card-text">
+       Bird and Diz
+      </p>
+     </div>
+     <div class="card-footer">
+      <a href="bird.html" class="card-link">List of Songs</a>
+     </div>
+    </div>
+   </div>
+   <div class="col-md-4 col-lg-4 col-sm-12">
+    <div class="card">
+     <div class="card-img">
+      <img src="album6.jpg" class="img-fluid">
+     </div>
+     <div class="card-body">
+        <h4 class="card-title">Miles Davis</h4>
+      <p class="card-text">
+       Miles Davies Bitches Brew
+      </p>
+     </div>
+     <div class="card-footer">
+      <a href="miles.html" class="card-link">List of Songs</a>
+     </div>
+    </div>
+   </div>
+   <div class="col-md-4 col-lg-4 col-sm-12">
+    <div class="card">
+     <div class="card-img">
+      <img src="album4.jpg" class="img-fluid">
+     </div>
+     <div class="card-body">
+     <h4 class="card-title">John Coltrane</h4>
+      <p class="card-text">
+       PRESTIGE 7123
+      </p>
+     </div>
+     <div class="card-footer">
+      <a href="coltrane.html" class="card-link">List of Songs</a>
+     </div>
+    </div>
+   </div>
+  </div>
+ </div>
+</div>
+
+</body>
+</html>
+
+
+

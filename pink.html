@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>PinK Floyd Songs</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+	<style type="text/css">
+
+.navbar{
+	background-color: green;
+}
+.nav-link , .navbar-brand{
+	color: blue;
+	cursor: pointer;
+}
+.nav-link{
+	margin-right: 1em !important;
+}
+.nav-link:hover{
+	background: #f4f4f4;
+	color: red;
+
+}
+.navbar-collapse{
+ justify-content: flex-end;
+}
+
+.navbar-toggler{
+  background:#fff !important;
+}
+	</style>
+</head>
+<body>
+
+
+
+<script type="text/javascript">
+
+var nav = document.createElement("nav");
+nav.setAttribute("class", "navbar navbar-expand-lg fixed-top ");
+
+var div1 = document.createElement("div");
+div1.setAttribute("class", "collapse navbar-collapse ");
+div1.setAttribute("id", "navbarSupportedContent");
+
+
+var ul = document.createElement("ul");
+ul.setAttribute("class", "navbar-nav mr-4");
+
+var li1 = document.createElement("li");
+li1.setAttribute("class", "nav-item");
+
+var li2 = document.createElement("li");
+li2.setAttribute("class", "nav-item");;
+
+var anchor1 = document.createElement("a");
+anchor1.setAttribute("class", "nav-link");
+anchor1.setAttribute("data-value", "home");
+anchor1.setAttribute("href", "index.html");
+anchor1.innerHTML = "HOME";
+
+var anchor2 = document.createElement("a");
+anchor2.setAttribute("class", "nav-link");
+anchor2.setAttribute("data-value", "videos");
+anchor2.setAttribute("href", "videos.html");
+anchor2.innerHTML = "VIDEOS";
+
+
+nav.appendChild(div1);
+div1.appendChild(ul);
+ul.appendChild(li1);
+ul.appendChild(li2);
+li1.appendChild(anchor1);
+li2.appendChild(anchor2);
+document.body.appendChild(nav);	
+
+var albumName = document.createElement("h1");
+albumName.innerHTML = "Dark Side of the Moon";
+document.body.appendChild(albumName);
+
+var img1 = document.createElement("img");
+img1.setAttribute("class", "pink");
+img1.src = "album1.png";
+document.body.appendChild(img1);
+
+var para = document.createElement("p");
+para.innerHTML = "The Dark Side of the Moon is the eighth studio album by English rock band Pink Floyd, released on 1 March 1973 by Harvest Records. Primarily developed during live performances, the band premiered an early version of the record several months before recording began. New material was recorded in two sessions in 1972 and 1973 at Abbey Road Studios in London.";
+document.body.appendChild(para);
+
+var song1 = document.createElement("p");
+song1.innerHTML = "Money";
+document.body.appendChild(song1);
+
+var audio1 = document.createElement("audio");
+audio1.setAttribute("id", "sound");
+audio1.setAttribute("controls", "");
+
+var source1 = document.createElement("source");
+source1.setAttribute("src", "money.mp3");
+source1.setAttribute("type", "audio/mp3");
+
+audio1.appendChild(source1);
+document.body.appendChild(audio1);
+
+var song2 = document.createElement("p");
+song2.innerHTML = "On The Run";
+document.body.appendChild(song2);
+
+var audio2 = document.createElement("audio");
+audio2.setAttribute("id", "sound");
+audio2.setAttribute("controls", "");
+
+var source2 = document.createElement("source");
+source2.setAttribute("src", "ontherun.mp3");
+source2.setAttribute("type", "audio/mp3");
+
+audio2.appendChild(source2);
+document.body.appendChild(audio2);
+
+
+</script>
+
+</body>
+</html>
+
+
+
+
+

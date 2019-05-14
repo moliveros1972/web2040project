@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>Videos</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+	<style type="text/css">
+
+.navbar{
+	background-color: green;
+}
+.nav-link , .navbar-brand{
+	color: blue;
+	cursor: pointer;
+}
+.nav-link{
+	margin-right: 1em !important;
+}
+.nav-link:hover{
+	background: #f4f4f4;
+	color: red;
+
+}
+.navbar-collapse{
+ justify-content: flex-end;
+}
+
+.navbar-toggler{
+  background:#fff !important;
+}
+	</style>
+</head>
+<body>
+
+<br/>
+
+<script type="text/javascript">
+
+var nav = document.createElement("nav");
+nav.setAttribute("class", "navbar navbar-expand-lg fixed-top ");
+
+var div1 = document.createElement("div");
+div1.setAttribute("class", "collapse navbar-collapse ");
+div1.setAttribute("id", "navbarSupportedContent");
+
+
+var ul = document.createElement("ul");
+ul.setAttribute("class", "navbar-nav mr-4");
+
+var li1 = document.createElement("li");
+li1.setAttribute("class", "nav-item");
+
+var li2 = document.createElement("li");
+li2.setAttribute("class", "nav-item");;
+
+var anchor1 = document.createElement("a");
+anchor1.setAttribute("class", "nav-link");
+anchor1.setAttribute("data-value", "home");
+anchor1.setAttribute("href", "index.html");
+anchor1.innerHTML = "HOME";
+
+var anchor2 = document.createElement("a");
+anchor2.setAttribute("class", "nav-link");
+anchor2.setAttribute("data-value", "about");
+anchor2.setAttribute("href", "about.html");
+anchor2.innerHTML = "ABOUT";
+
+
+nav.appendChild(div1);
+div1.appendChild(ul);
+ul.appendChild(li1);
+ul.appendChild(li2);
+li1.appendChild(anchor1);
+li2.appendChild(anchor2);
+document.body.appendChild(nav);	
+	
+
+
+
+</script>
+
+<iframe width="400" height="250" src="https://www.youtube.com/embed/cpbbuaIA3Ds" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<br/>
+
+
+
+</body>
+</html>
